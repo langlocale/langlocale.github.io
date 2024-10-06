@@ -30,7 +30,7 @@ export default {
 							fields: [
 								{ label: "Name", name: "name", widget: "string" },
 								{ label: "URL", name: "url", widget: "string" },
-								{ label: "Language", name: "language", widget: "select", options: ["French", "German", "English", "Arabic"] },
+								{ label: "Language", name: "language", widget: "select", options: ["Arabic", "English", "French", "German", "Spanish"] },
 
 							]
 						}

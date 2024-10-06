@@ -14,6 +14,36 @@
       "name": "ZDF",
       "url": "https://www.zdf.de/live-tv",
       "language": "German"
-    }
+    },
+		{
+			"name": "Al Jazeera",
+			"url": "https://www.aljazeera.net/live",
+			"language": "Arabic"
+		},
+		{
+			"name": "Al Jazeera",
+			"url": "https://www.aljazeera.com/live/",
+			"language": "English"
+		},
+		{
+			"name": "France 24",
+			"url": "https://www.france24.com/fr/live",
+			"language": "French"
+		},
+		{
+			"name": "France 24",
+			"url": "https://www.france24.com/en/live",
+			"language": "English"
+		},
+		{
+			"name": "France 24",
+			"url": "https://www.france24.com/es/live",
+			"language": "Spanish"
+		},
+		{
+			"name": "France 24",
+			"url": "https://www.france24.com/ar/live",
+			"language": "Arabic"
+		}
   ]
 }
