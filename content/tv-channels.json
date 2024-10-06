@@ -1,0 +1,19 @@
+{
+  "tv-channels": [
+    {
+      "name": "Arte",
+      "url": "https://www.arte.tv/fr/direct/",
+      "language": "French"
+    },
+    {
+      "name": "Arte",
+      "url": "https://www.arte.tv/de/live/",
+      "language": "German"
+    },
+    {
+      "name": "ZDF",
+      "url": "https://www.zdf.de/live-tv",
+      "language": "German"
+    }
+  ]
+}

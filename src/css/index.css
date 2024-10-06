@@ -1,0 +1,33 @@
+:root {
+	--s-font: 20px;
+	--s-font--text: 1rem;
+	--s: 0.5rem;
+	--s-container: 50rem;
+}
+
+html {
+	font-size: var(--s-font);
+	font-size: var(--s-font--text);
+}
+
+html,
+body {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	max-width: var(--s-container);
+}
+
+ll-list ul li {
+	 margin-bottom: var(--s);
+}
+
+
+ll-list a {
+	padding: var(--s);
+}
