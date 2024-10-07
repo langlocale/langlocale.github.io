@@ -1,5 +1,21 @@
+import { Languages } from "./data.js"
+
 /* Example to start with a fresh template */
 export default class LLList extends HTMLElement {
+	static get observedAttributes() {
+		return ["language"]
+	}
+	get language() {
+		return this.getAttribute("language") || Languages[0]
+	}
+	set language(str) {
+		this.setAttribute("language", str)
+	}
+
+	attributeChangedCallback() {
+		this.render()
+	}
+
 	async connectedCallback() {
 		this.model = this.getAttribute("model")
 		const modelPath = new URL(import.meta.url).pathname.split('/').slice(0, -3).join('/')
@@ -8,7 +24,9 @@ export default class LLList extends HTMLElement {
 		this.render()
 	}
 	render() {
-		const items = this.data.map(item => {
+		const items = this.data.filter(item => {
+			return item.language === this.language
+		}).map(item => {
 			const wrapper = document.createElement("article")
 			const link = document.createElement("a")
 			link.textContent = item.name
@@ -28,7 +46,23 @@ export default class LLList extends HTMLElement {
 			li.append(item)
 			return li
 		}))
-		this.replaceChildren(list)
+
+		const options = Languages.map((option) => {
+			const $option = document.createElement("option")
+			$option.textContent = option
+			$option.value = option
+			if (option === this.language) {
+				$option.selected = true
+			}
+			return $option
+		})
+
+		const select = document.createElement("select")
+		select.addEventListener("change", (event) => {
+			this.setAttribute("language", event.target.value)
+		})
+		select.replaceChildren(...options)
+		this.replaceChildren(select, list)
 	}
 }
 

@@ -1,3 +1,6 @@
+import {Languages} from "../data.js"
+
+
 export default {
 	load_config_file: false,
 
@@ -38,7 +41,7 @@ export default {
 									label: "Language",
 									name: "language",
 									widget: "select",
-									options: ["Arabic", "English", "French", "German", "Spanish"]
+									options: Languages
 								},
 							]
 						}
