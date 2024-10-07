@@ -7,7 +7,7 @@ export default {
 	/* For local CMS, toggle next line and `npx decap-server` */
 	local_backend: true,
 	backend: {
-		name: 'test',
+		name: 'test-repo',
 	},
 
 	/** Media uploads */
