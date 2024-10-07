@@ -4,11 +4,7 @@ export default {
 	/* For local CMS, toggle next line and `npx decap-server` */
 	local_backend: true,
 	backend: {
-		name: 'gitlab',
-		repo: '',
-		branch: 'main',
-		auth_type: 'pkce',
-		app_id: ''
+		name: 'test',
 	},
 
 	/** Media uploads */
@@ -28,10 +24,22 @@ export default {
 							name: 'tv-channels',
 							widget: 'list',
 							fields: [
-								{ label: "Name", name: "name", widget: "string" },
-								{ label: "URL", name: "url", widget: "string" },
-								{ label: "Language", name: "language", widget: "select", options: ["Arabic", "English", "French", "German", "Spanish"] },
-
+								{
+									label: "Name",
+									name: "name",
+									widget: "string"
+								},
+								{
+									label: "URL",
+									name: "url",
+									widget: "string"
+								},
+								{
+									label: "Language",
+									name: "language",
+									widget: "select",
+									options: ["Arabic", "English", "French", "German", "Spanish"]
+								},
 							]
 						}
 					]
