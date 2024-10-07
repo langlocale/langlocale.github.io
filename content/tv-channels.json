@@ -44,6 +44,11 @@
 			"name": "France 24",
 			"url": "https://www.france24.com/ar/live",
 			"language": "Arabic"
+		},
+		{
+			"name": "France TV Info",
+			"url": "https://www.francetvinfo.fr/en-direct/tv.html",
+			"language": "French"
 		}
   ]
 }
