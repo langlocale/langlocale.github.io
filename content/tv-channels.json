@@ -49,6 +49,11 @@
 			"name": "France TV Info",
 			"url": "https://www.francetvinfo.fr/en-direct/tv.html",
 			"language": "French"
+		},
+		{
+			"name": "RBB",
+			"url": "https://www.rbb-online.de/fernsehen/live/",
+			"language": "German"
 		}
   ]
 }
